@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Reservation Form</title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <script type="text/javascript">
+      function display()
+      {
+          var name=document.getEgetElementsByName("Name");
+        alert("Welcome to train reservation" +name[0].value);
+      }
+      </script>
+  </head>
+  <body>
+    <div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+          <h1 style="color: red;">ReservationForm</h1>
+          <marquee>Please fill the registration form before Reservation Form</marquee>
+          <hr class="mb-3">
+          <label for="Name"><b>NAME</b></label>
+          <input class="form-control" type="text" name="Name" required>
+          <label for="Gender"><b>Gender:</b></label>
+          <input type="radio" name="Gender" value="Male" required>Male
+          <input type="radio" name="Gender" value="Female" required>Female<br>
+          <label for="style"><b>Style:</b></label>
+          <input class="form-control" type="button" name="style" value="Window sitting" required>
+          <input class="form-control" type="button" name="style" value="sleeping style" required>
+          <label for="No of Birth/Seat:"><b>No of Birth/Seat:</b></label>
+          <input class="form-control" type="number" name="No of Birth/Seat:" ><br>
+          <label for="starting from:"><b>starting from:</b></label>
+          <input class="form-content" type="time" name="starting from:" value="Enter the Time"><br>
+          <label for="To:"><b>To:</b></label>
+          <input class="form-content" type="time" name="To:" value="Enter the Time"><br>
+          <label for="Boarding at:"><b>Boarding at:</b></label>
+          <input class="form-content" type="text" name="Boarding at:" value="Enter"><br>
+          <label for="To:"><b>To:</b></label><br>
+          <input class="form-content" type="text" name="To:" value="Enter">
+          <hr class="mb-3">
+          <input class="btn btn-primary" type="submit" value="submit" onclick="display()"/>
+          <input class="btn btn-secondary"type="reset" name="clear" value="clear">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
